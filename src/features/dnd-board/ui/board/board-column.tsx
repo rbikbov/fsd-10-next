@@ -3,7 +3,7 @@ import { BoardCol } from "@/entities/board";
 import { DotsSixVertical, RemoveIcon, UpdateIcon } from "@/shared/ui/ui-icons";
 import { useState } from "react";
 import { UpdateColumnModal } from "../modals/update-column-modal";
-import { Draggable } from "react-beautiful-dnd";
+import { Draggable } from "@hello-pangea/dnd";
 import { AddBoardCard } from "../add-board-card";
 import { useBoardStore } from "../../model/use-board-store";
 import { BoardCards } from "./board-cards";

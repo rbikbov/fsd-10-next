@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import { useBoardStore } from "../../model/use-board-store";
 import { BoardColumn } from "./board-column";
-import { DragDropContext, Droppable } from "react-beautiful-dnd";
+import { DragDropContext, Droppable } from "@hello-pangea/dnd";
 import { useListenBoardEvents } from "../../model/events/use-listen-board-events";
 
 export function Board({ className }: { className?: string }) {

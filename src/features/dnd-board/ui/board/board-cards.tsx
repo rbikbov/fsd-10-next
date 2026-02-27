@@ -2,7 +2,7 @@ import { BoardCard, BoardCol } from "@/entities/board";
 import { UserPreview, useUsers } from "@/entities/user";
 import { DotsSixVertical, RemoveIcon } from "@/shared/ui/ui-icons";
 import clsx from "clsx";
-import { Draggable, Droppable } from "react-beautiful-dnd";
+import { Draggable, Droppable } from "@hello-pangea/dnd";
 import { useBoardStore } from "../../model/use-board-store";
 import { useBoardSearch } from "../../model/board-search.store";
 
