@@ -89,6 +89,10 @@ export function CreateUserForm({ className }: { className?: string }) {
             value={value}
             onChange={onChange}
             getSrc={(v) => getAvatarUrl(v).src}
+            getImgExtraProps={(v) => ({
+              width: getAvatarUrl(v).width,
+              height: getAvatarUrl(v).height,
+            })}
             images={Array.from({ length: 8 }, (_, i) => i + 1)}
             error={fieldState.error?.message}
           />
