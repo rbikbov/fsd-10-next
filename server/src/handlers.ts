@@ -26,7 +26,7 @@ const unauthorized = async (resp: Response) => {
 };
 
 const ok = async (resp: Response, body?: unknown) => {
-  resp.status(200).json(body).send();
+  resp.status(200).send(body);
 };
 
 export const getHandlers = async () => {

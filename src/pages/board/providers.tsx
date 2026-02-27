@@ -55,7 +55,7 @@ export function BoardDepsProvider({
         },
         updateBoardCard: async (board) => {
           const task = await updateTask(board.id);
-          if (!task) throw new Error();
+          if (!task) return;
           return {
             ...task,
             name: task.title,

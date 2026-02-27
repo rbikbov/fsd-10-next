@@ -11,7 +11,7 @@ export function UpdateTaskModal({
   taskId: string;
 }) {
   return (
-    <UiModal isOpen onClose={onClose} width="md">
+    <UiModal isOpen onClose={() => onClose()} width="md">
       <UpdateTaskForm onSuccess={onClose} taskId={taskId}>
         <UiModal.Header>
           <h1>Редактирование задачи</h1>
